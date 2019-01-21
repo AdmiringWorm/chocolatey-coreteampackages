@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.3.6
+
+- Bugfix `Get-AppInstallLocation`: Changed key to be forced as a single value (instead of array)
+
 ## 1.3.5
 
 - Bugfix `Remove-Process`: Fixed Powershell v2 compatibility issue
