@@ -3,6 +3,7 @@
 ## 1.3.6
 
 - Bugfix `Get-AppInstallLocation`: Changed key to be forced as a single value (instead of array)
+- Bugfix `Get-AppInstallLocation`: Added unescaping of app name pattern when calling 'Get-UninstallRegistryKey' ([#784](https://github.com/chocolatey/chocolatey-coreteampackages/issues/784))
 
 ## 1.3.5
 
