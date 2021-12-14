@@ -14,6 +14,7 @@
 */ruby.portable*      @chocolatey-community/chocolatey-team-maintainers
 */python3-streams     @chocolatey-community/chocolatey-team-maintainers @Jackenmen
 */python*             @chocolatey-community/chocolatey-team-maintainers
+*/brave*              @AdmiringWorm
 */calibre*            @gep13 @AdmiringWorm
 */cdburnerxp*         @gep13
 */poweriso*           @gep13
@@ -45,6 +46,8 @@
 */googlechromebeta*   @tunisiano187
 */krita*              @tunisiano187
 */selenium.powershell* @chocolatey-community/chocolatey-team-maintainers
+*/thunderbird*        @majkinetor @gep13
+*/git.portable*       @jeterson
 
 # Other
 # This can be any file other that won't be matched as a package
