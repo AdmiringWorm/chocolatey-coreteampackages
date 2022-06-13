@@ -1,0 +1,26 @@
+name: Package AU Trigger
+
+on:
+  workflow_dispatch:
+    inputs:
+      packages:
+        description: "What is the packages you wish to force updates for?"
+        required: true
+
+jobs:
+  trigger:
+    runs-on: ubuntu-20.04 # We use ubuntu image, as it is faster to spin up
+    env:
+      PACKAGES: ${{ github.event.inputs.packages }}
+    steps:
+      - uses: actions/checkout@v3.0.2
+        with:
+          fetch-depth: 0
+      - name: Create Trigger Commit
+        uses: actions-js/push@v1.3
+        with:
+          github_token: ${{ secrets.COMMIT_TOKEN }}
+          author_email: "chocolatey@realdimensions.net"
+          author_name: "Chocolatey Community"
+          empty: true
+          message: "[AU ${PACKAGES}]"
